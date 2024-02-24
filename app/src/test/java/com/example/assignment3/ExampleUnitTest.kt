@@ -1,4 +1,4 @@
-package com.cs4520.assignment3
+package com.example.assignment3
 
 import org.junit.Test
 
