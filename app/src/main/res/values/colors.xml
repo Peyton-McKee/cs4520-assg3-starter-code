@@ -7,4 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="mvp_background">#FFC4B8E1</color>
+    <color name="mvvm_background">#FFFFB3BA</color>
 </resources>

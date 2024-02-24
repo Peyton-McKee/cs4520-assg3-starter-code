@@ -58,6 +58,8 @@ class ViewModelFragment : Fragment() {
     private fun MvvmFragmentBinding.addViewModelObservers() {
         viewModel.resultLiveData.observe(viewLifecycleOwner) { result ->
             binding.root.findViewById<TextView>(R.id.result_text).text = result.toString()
+            binding.root.findViewById<EditText>(R.id.x_text).setText("")
+            binding.root.findViewById<EditText>(R.id.y_text).setText("")
         }
 
         viewModel.errorLiveData.observe(viewLifecycleOwner) {

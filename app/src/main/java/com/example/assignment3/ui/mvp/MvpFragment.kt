@@ -31,7 +31,6 @@ class MvpFragment : Fragment(), CalculatorView, View.OnClickListener {
         //bind my mvp fragment
         binding = MvpFragmentBinding.inflate(inflater, container, false)
 
-
         binding.root.findViewById<Button>(R.id.add_button).setOnClickListener (this)
 
         binding.root.findViewById<Button>(R.id.sub_button).setOnClickListener (this)
@@ -57,6 +56,8 @@ class MvpFragment : Fragment(), CalculatorView, View.OnClickListener {
 
     override fun setResult(result: Float) {
         binding.root.findViewById<TextView>(R.id.result_text).text = result.toString()
+        binding.root.findViewById<EditText>(R.id.x_text).setText("")
+        binding.root.findViewById<EditText>(R.id.y_text).setText("")
     }
 
     override fun error() {

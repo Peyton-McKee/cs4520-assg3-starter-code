@@ -1,8 +1,5 @@
 package com.example.assignment3.ui.mvp
 
-import android.util.Log
-
-
 class MvpPresenter(private val view: CalculatorView) {
     private var num1: String = ""
     private var num2: String = ""
